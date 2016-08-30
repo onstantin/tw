@@ -2,8 +2,8 @@
 	error_reporting(E_ALL);
 	require_once "config.php";
 	require_once "guestbook.php";
+	require_once(__DIR__."/vendor/twig/twig/lib/Twig/Autoloader.php");
 	
-	require_once "/vendor/twig/twig/lib/Twig/Autoloader.php";	
 	Twig_Autoloader::register();
 	
 	$loader = new Twig_Loader_Filesystem('./templates');
@@ -16,5 +16,3 @@
 	$template = $twig->loadTemplate('./index.phtml');
 	$params = array("guestbook" => $guestbook->last());
 	$template->display($params);
-
-	
