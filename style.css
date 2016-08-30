@@ -1,0 +1,97 @@
+﻿table {
+	border-collapse: collapse;
+}
+td, th {
+	border: 1px solid #f2e8c9; 
+	padding: 3px 20px;
+	height: 51px;
+	color: #505050;
+	background: #ffffe9;
+}
+th {
+	background: #f2e8c9;
+}
+h1, h2, p, a, td, th, span {font-family: arial;}
+h1 {font-size: 20px;}
+h2 {font-size: 16px;}
+form {
+	display: inline-block;
+	margin: 10px 10px 10px 0;
+}
+.editform {
+	margin: 0;
+}
+input, select, textarea {			
+	border: 1px solid #E1E4F2;
+	padding: 2px 5px;
+	width: 200px;
+}
+textarea {
+	height: 100px;
+	margin-top: 10px;
+}
+input {
+	height: 18px;
+}
+select {
+	height: 24px;
+}
+button {
+	background: #E1E4F2;
+	border: 1px solid #E1E4F2;		
+	height: 24px;
+	margin-top: 5px;
+}
+button:hover {
+	background: #d2d4e0;
+	cursor: pointer;
+}
+	
+a {
+	color: #505050;
+	border-bottom: 1px solid #f2e8c9;
+	text-decoration: none;
+}
+a:hover {
+	border-bottom: none;
+}
+td span {
+	color: #aaa;
+}
+.item {
+	border-top: 1px solid #E1E4F2;
+	border-bottom: 1px solid #E1E4F2;
+	margin-top: 10px;
+	width: 600px;
+	background: #F5F5FF;
+	padding: 5px 10px;
+}
+.info {
+	font-size: 12px;
+	font-family: "courier new";
+	margin-bottom: 0;
+}
+.message {
+	font-size: 14px;
+	font-family: arial;
+	background: #E1E4F2;
+	padding: 10px;
+	margin-bottom: 0;
+}
+
+.create {
+	margin: 20px;
+	background: #E1E4F2;
+	border-radius: 5px;
+	width: 200px;
+	padding: 5px 10px;
+}
+
+.create  a {
+	border: none;
+}
+
+.create:hover {
+	cursor: pointer;
+	background: #d2d4e0;
+}

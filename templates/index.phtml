@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Гостевая книга</title>
+	<meta charset="utf-8">
+	<link type="text/css" href="style.css" rel="stylesheet" charset="utf-8"> 
+</head>
+<body> 
+	<h1>Гостевая книга</h1>	
+	
+	{% for item in guestbook %}
+		<div class="item"><p class="info">Опубликовано <strong>{{ item.crdate|date("d.m.Y в H:i")}}</strong> автором <strong>{{ item.name}}</strong> </p><p class="message"> {{ item.message|nl2br }} </p></div>
+	{% endfor %}	
+
+	<div class="create">
+		<a href="create.php">Добавить сообщение &rarr;</a>
+	</div>
+</body> 	
+</html>
